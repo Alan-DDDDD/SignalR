@@ -1,4 +1,4 @@
-//connect();
+connect();
 async function connect(){
 var response = await fetch("https://3d23-61-222-180-215.ngrok-free.app/chathub", {
     method: "get",
