@@ -1,6 +1,6 @@
 connect();
 async function connect(){
-var response = await fetch(url + "/api/Account/", {
+var response = await fetch(url + "/chathub", {
     method: "get",
     headers: new Headers({
       "ngrok-skip-browser-warning": "69420",
@@ -8,7 +8,7 @@ var response = await fetch(url + "/api/Account/", {
     }),
   });
 }
-var connection = new signalR.HubConnectionBuilder().withUrl("https://3d23-61-222-180-215.ngrok-free.app/chatHub").build();
+var connection = new signalR.HubConnectionBuilder().withUrl("https://3d23-61-222-180-215.ngrok-free.app/chathub").build();
 connection.start().then(function () {
     console.log("Hub 連線完成");
 }).catch(function (err) {
