@@ -1,6 +1,6 @@
 connect();
 async function connect(){
-var response = await fetch(url + "/chathub", {
+var response = await fetch("https://3d23-61-222-180-215.ngrok-free.app/chathub", {
     method: "get",
     headers: new Headers({
       "ngrok-skip-browser-warning": "69420",
