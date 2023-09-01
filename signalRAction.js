@@ -7,7 +7,7 @@
 //     console.log(data);
 
 // }
-document.cookie = "abuse_interstitial=4d17-61-222-180-215.ngrok-free.app;path=/;domain=4d17-61-222-180-215.ngrok-free.app" 
+document.cookie = "abuse_interstitial=4d17-61-222-180-215.ngrok-free.app;path=/" 
 var connection = new signalR.HubConnectionBuilder().withUrl("https://4d17-61-222-180-215.ngrok-free.app/chathub").build();
 connection.start().then(function () {
     console.log("Hub 連線完成");
