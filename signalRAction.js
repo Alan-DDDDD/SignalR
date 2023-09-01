@@ -1,14 +1,14 @@
 connect();
 async function connect(){
-var response = await fetch("https://3d23-61-222-180-215.ngrok-free.app/t", {
-    method: "get",
-    headers: new Headers({
-      "ngrok-skip-browser-warning": "69420",
-    }),
-  });
-  var data = await response.json();
+    var response = await fetch("https://4d17-61-222-180-215.ngrok-free.app/t", {
+        method: "get",
+        headers: new Headers({
+        "ngrok-skip-browser-warning": "69420",
+        }),
+    });
+    var data = await response.json();
 }
-var connection = new signalR.HubConnectionBuilder().withUrl("https://3d23-61-222-180-215.ngrok-free.app/chathub").build();
+var connection = new signalR.HubConnectionBuilder().withUrl("https://4d17-61-222-180-215.ngrok-free.app/chathub").build();
 connection.start().then(function () {
     console.log("Hub 連線完成");
 }).catch(function (err) {
