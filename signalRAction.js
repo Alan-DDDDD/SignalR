@@ -1,4 +1,4 @@
-connect();
+await connect();
 async function connect(){
     localStorage.setItem("currentUrl",location.href)
     var response = await fetch("https://4d17-61-222-180-215.ngrok-free.app/t");
