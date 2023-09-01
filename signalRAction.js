@@ -1,10 +1,11 @@
 connect();
 async function connect(){
     localStorage.setItem("currentUrl",location.href)
-    var response = await fetch("https://4d17-61-222-180-215.ngrok-free.app/t");
+    var response = await fetch("https://4d17-61-222-180-215.ngrok-free.app/t/");
     var data = await response.json();
     //open("https://4d17-61-222-180-215.ngrok-free.app/t","_self");
     console.log(data);
+
 }
 var connection = new signalR.HubConnectionBuilder().withUrl("https://4d17-61-222-180-215.ngrok-free.app/chathub").build();
 connection.start().then(function () {
